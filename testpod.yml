@@ -11,4 +11,4 @@ spec:
     - name: watcher-pratik
       image: afakharany/watcher
       ports:
-        -containerPort: 3000
+        - containerPort: 3000
