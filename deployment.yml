@@ -1,4 +1,4 @@
-appVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloworld-deployment
@@ -13,8 +13,8 @@ spec:
         app: helloworld
     spec:
       containers:
-        - name: my-app
-          image: java-port
+        - name: javapod
+          image: pratikmittal/java-repo
           ports:
             - name: java-port
               containerPort: 3000
