@@ -1,0 +1,20 @@
+appVersion: app/v1
+kind: Deployment
+metadata:
+  name: helloworld-deployment
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: helloworld
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+      containers:
+        - name: my-app
+          image: java-port
+          ports:
+            - name: java-port
+              containerPort: 3000
