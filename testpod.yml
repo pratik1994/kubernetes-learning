@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pratikpod
+spec:
+  containers:
+    - name: nginx-pratik
+      image: nginx
+      ports:
+        - containerPort: 8080
+    - name: watcher-pratik
+      image: afakharany/watcher
+      ports:
+        -containerPort: 8081
