@@ -10,5 +10,5 @@ spec:
     - name: javapod
       image: pratikmittal/java-repo
       ports:
-        - name: javaport
+        - name: java-port
           containerPort: 3000
