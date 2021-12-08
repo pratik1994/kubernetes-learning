@@ -4,7 +4,6 @@ metadata:
   name: javapod
 spec:
   containers:
-    type: JavaPort
     - name: javapod
       image: pratikmittal/java-repo
       ports:
