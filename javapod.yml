@@ -2,9 +2,13 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: javapod
+  labels: 
+    app: helloworld
+    env: dev
 spec:
   containers:
     - name: javapod
       image: pratikmittal/java-repo
       ports:
-        - containerPort: 3000
+        - name: javaport
+          containerPort: 3000
